@@ -37,7 +37,7 @@ router.put('/:productId', async (req, res) => {
             new: true
         });
     // Status 200 get object
-    res.status(200).json(product);
+    res.status(200).json(updatedProduct);
     } catch (error) {
         console.log(error);
         return res.status(500).json(error);
