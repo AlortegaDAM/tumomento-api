@@ -1,5 +1,4 @@
 const express = require('express');
-const Opinion = require('../model/Opinion');
 
 const router = express.Router();
 const Opinion = require('../model/Opinion');

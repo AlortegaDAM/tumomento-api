@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const UserSchema = new Schema({
+const UserSchema = mongoose.Schema({
     name: String,
     email: {
         type:String,
@@ -16,4 +16,4 @@ const UserSchema = new Schema({
     latitude: String,
 });
 
-module.exports = mongoose.model('User', UsertSchema);
+module.exports = mongoose.model('User', UserSchema);
