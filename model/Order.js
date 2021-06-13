@@ -6,7 +6,7 @@ const OrderSchema = mongoose.Schema({
         ref: 'User',
         required: true
     },
-    date: Date.now,
+    date: Date,
     products: [
         {
             id:{
